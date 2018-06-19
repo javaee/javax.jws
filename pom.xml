@@ -268,6 +268,7 @@
     <a href="{@docRoot}/doc-files/speclicense.html" target="_top">license terms</a>.
 ]]>
                     </bottom>
+                    <additionalOptions>-Xdoclint:none</additionalOptions>
                 </configuration>                
                 <executions>
                     <execution>
@@ -282,7 +283,6 @@
                                     <packages>javax.jws</packages>
                                 </group>
                             </groups>
-                            <additionalOptions>-Xdoclint:none</additionalOptions>
                         </configuration>
                     </execution>
                 </executions>

@@ -102,9 +102,9 @@
         </mailingList>
     </mailingLists>
     <scm>
-        <connection>scm:git:git@github.com:javaee/javax.jws.git</connection>
-        <developerConnection>scm:git:git@github.com:javaee/javax.jws.git</developerConnection>
-        <url>https://github.com/javaee/javax.jws</url>
+        <connection>scm:git:git@github.com:Tomas-Kraus/javax.jws.git</connection>
+        <developerConnection>scm:git:git@github.com:Tomas-Kraus/javax.jws.git</developerConnection>
+        <url>https://github.com/Tomas-Kraus/javax.jws</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -115,6 +115,41 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.3</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.7.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.glassfish.build</groupId>
+                    <artifactId>spec-version-maven-plugin</artifactId>
+                    <version>1.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>3.5.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-remote-resources-plugin</artifactId>
+                    <version>1.5</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.0.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.0.1</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -137,7 +172,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
                 <executions>
                     <execution>
                         <id>default-compile</id>
@@ -168,7 +202,6 @@
             <plugin>
                 <groupId>org.glassfish.build</groupId>
                 <artifactId>spec-version-maven-plugin</artifactId>
-                <version>1.2</version>
                 <configuration>
                     <spec>
                         <nonFinal>${non.final}</nonFinal>
@@ -190,7 +223,6 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>3.5.0</version>
                 <configuration>
                     <supportedProjectTypes>
                         <supportedProjectType>jar</supportedProjectType>
@@ -223,7 +255,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
                 <configuration>
                     <useDefaultManifestFile>true</useDefaultManifestFile>
                     <excludes>
@@ -234,7 +265,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-remote-resources-plugin</artifactId>
-                <version>1.2.1</version>
                 <executions>
                   <execution>
                     <goals>
@@ -251,7 +281,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.0.1</version>
                 <configuration>
                     <includePom>true</includePom>
                 </configuration>
@@ -267,7 +296,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.0.1</version>
                 <configuration>
                     <bottom>
 <![CDATA[Copyright &#169; 1996-2013,

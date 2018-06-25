@@ -306,23 +306,13 @@
 ]]>
                     </bottom>
                     <additionalOptions>-Xdoclint:none</additionalOptions>
-                </configuration>                
-                <executions>
-                    <execution>
-                        <phase>javadoc</phase>
-                        <goals>
-                            <goal>javadoc</goal>
-                        </goals>
-                        <configuration>
-                            <groups>
-                                <group>
-                                    <title>Web Services Metadata for the JavaTM Platform API Documentation</title>
-                                    <packages>javax.jws</packages>
-                                </group>
-                            </groups>
-                        </configuration>
-                    </execution>
-                </executions>
+                    <groups>
+                        <group>
+                            <title>Web Services Metadata for the JavaTM Platform API Documentation</title>
+                            <packages>javax.jws</packages>
+                        </group>
+                    </groups>
+                </configuration>
             </plugin>     
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

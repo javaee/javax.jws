@@ -305,7 +305,7 @@
     <a href="{@docRoot}/doc-files/speclicense.html" target="_top">license terms</a>.
 ]]>
                     </bottom>
-                    <additionalOptions>-Xdoclint:none</additionalOptions>
+                    <additionalparam>-Xdoclint:none</additionalparam>
                     <groups>
                         <group>
                             <title>Web Services Metadata for the JavaTM Platform API Documentation</title>
